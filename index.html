@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<body>
+<center>
+    <nav>
+        <a href="gym.html">Home</a> |
+        <a href="page2.html">Programmes</a> |
+        <a href="page3.html">Facilities</a> |
+    </nav> 
+<center>    
+<body>
+
+
+<img src="f45.jpg" alt="f45" width="400" height="400">
+<p style="font-family:sans-serifs;font-size:50px;font-style:italic"> Our Classes </p>
+
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'Functional HIIT')">Functional HIIT</button>
+
+  <button class="tablinks" onclick="openCity(event, 'Team Training')">Team Training</button>
+  <button class="tablinks" onclick="openCity(event, '45MINS')">45MINS</button>
+
+</div>
+
+
+<div id="Functional HIIT" class="tabcontent">
+  <h3>Functional HIIT</h3>
+  <img src="control.jpg" alt="functional hiit" width="100" height="100">
+  <p>F45 is specifically designed to provide a functional full-body workout while improving energy levels, metabolic rate, strength, and endurance.</p>
+</div>
+
+<div id="Team Training" class="tabcontent">
+  <h3>Team Training</h3>
+  <img src="clip.jpg" alt="team training" width="100" height="100">
+  <p>The team mentality at F45 Training helps members transform their lifestyle physically and mentally while encouraging community growth and a no-ego attitude</p> 
+</div>
+
+<div id="45MINS" class="tabcontent">
+  <h3>45MINS</h3>
+  <img src="time.jpg" alt="45mins" width="100" height="100">
+  <p>F45 is one of the most time-efficient ways of training. We aim to burn up to 750 calories per 45-minute session.</p>
+</div>
+
+ 
+<p style="font-family:sans-serifs;font-size:50px;font-style:italic"> @ Changi Business Park </p>
+
+
+
+<img src="facility.jpg" alt="Prawning" width="500" height="350" hspace="40";> <img src="facility2.jpg" alt="Prawning" width="500" height="350";>
+<img src="facility1.jpg" alt="Prawning" width="500" height="350" hspace="40";> <img src="facility3.jpg" alt="Prawning" width="500" height="350";>
+
+<address>
+Contact No.: +65 6123 4567
+<br>Email: changibusinesspark@f45training.sg
+<br>Visit us at: 
+<br>https://f45training.sg/changibusinesspark/home
+<br>51 CBP CENTRAL 2, #02-01 THE SIGNATURE<br>S486066
+
+</address>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
